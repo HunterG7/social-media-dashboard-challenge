@@ -1,87 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="social-media-dashboard-with-theme-switcher-master/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="social-media-dashboard/images/favicon-32x32.png">
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<!-- Background Color -->
+<div id="top-bg"></div>
+<div id="bottom-bg"></div>
 
-  Dark Mode
+<!-- All Page Content -->
+<div class="page-wrapper">
+    <!-- header -->
+    <header class="container justify-center">
+        <div class="row align-center no-padding">
+            <div class="column justify-center">
+                <h1>Social Media Dashboard</h1>
+                <p>Total Followers: 23,004</p>
+            </div>
 
-  
+            <div class="column justify-center">
+                <div class="row justify-right">
+                    <p>mode</p>
+                    <input type="button">
+                </div>
+            </div>
+        </div>
+    </header>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <!-- social media cards -->
+    <section id="sm-cards-container" class="container justify-center">
+        <div class="row grow no-padding">
+            <div id="facebook-card" class="column justify-center sm-card">
+                <div class="row justify-center align-center no-padding handle-logo-row">
+                    <img src="social-media-dashboard/images/icon-facebook.svg" alt="Facebook logo">
+                    <p class="sm-handle">@nathanf</p>
+                </div>
+                <div class="row justify-center">
+                    <div class="column align-center">
+                        <h3 class="followers-count">1987</h3>
+                        <p class="followers-label">FOLLOWERS</p>
+                    </div>
+                </div>
+                <div class="row justify-center align-center">
+                    <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
+                    <p class="follower-displacement">12 Today</p>
+                </div>
+            </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+            <div id="twitter-card" class="column justify-center sm-card">
+                <div class="row justify-center align-center no-padding handle-logo-row">
+                    <img src="social-media-dashboard/images/icon-twitter.svg" alt="Facebook logo">
+                    <p class="sm-handle">@nathanf</p>
+                </div>
+                <div class="row justify-center">
+                    <div class="column align-center">
+                        <h3 class="followers-count">1044</h3>
+                        <p class="followers-label">FOLLOWERS</p>
+                    </div>
+                </div>
+                <div class="row justify-center align-center">
+                    <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
+                    <p class="follower-displacement">9 Today</p>
+                </div>
+            </div>
+            <div id="instagram-card" class="column justify-center sm-card"></div>
+            <div id="youtube-card" class="column justify-center sm-card"></div>
+        </div>
+    </section>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <!-- overview cards -->
+    <section id="overview-cards-container" class="container">
+        <div class="row">
+            <h2></h2>
+        </div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </section>
+
+    <!-- Citation / Footer -->
+    <footer class="attribution container justify-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/HunterG7" target="_blank">Hunter</a>.
+    </footer>
+</div>
 
 
 
-  Overview - Today
 
-  Page Views
-  87
-  3%
 
-  Likes
-  52
-  2%
 
-  Likes
-  5462
-  2257%
+Social Media Dashboard
+Total Followers: 23,004
 
-  Profile Views
-  52k
-  1375%
+Dark Mode
 
-  Retweets
-  117
-  303%
 
-  Likes
-  507
-  553%
+@nathanf
+1987
+Followers
+12 Today
 
-  Likes
-  107
-  19%
+@nathanf
+1044
+Followers
+99 Today
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+@realnathanf
+11k
+Followers
+1099 Today
+
+Nathan F.
+8239
+Subscribers
+144 Today
+
+
+
+Overview - Today
+
+Page Views
+87
+3%
+
+Likes
+52
+2%
+
+Likes
+5462
+2257%
+
+Profile Views
+52k
+1375%
+
+Retweets
+117
+303%
+
+Likes
+507
+553%
+
+Likes
+107
+19%
+
+Total Views
+1407
+12%
+
+<div class="container attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/HunterG7" target="_blank">Hunter</a>.
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>

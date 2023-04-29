@@ -1,0 +1,138 @@
+:root {
+/* PRIMARY */
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-lg1: hsl(37, 97%, 70%);
+    --instagram-lg2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+    /* dark theme */
+    --toggle-dark-lg1: hsl(210, 78%, 56%);
+    --toggle-dark-lg2: hsl(146, 68%, 55%);
+    /* light theme */
+    --toggle-light: hsl(230, 22%, 74%);
+
+/* NEUTRAL */
+    /* dark theme */
+    --very-dark-blue1: hsl(230, 17%, 14%); /* BG */
+    --very-dark-blue2: hsl(232, 19%, 15%); /* Top BG Pattern */
+    --dark-desaturated-blue: hsl(228, 28%, 20%); /* Card BG */
+    --desaturated-blue: hsl(228, 34%, 66%); /* Text */
+    --white-dark: hsl(0, 0%, 100%); /* Text */
+    /* light theme */
+    --white-light: hsl(0, 0%, 100%); /* BG */
+    --very-pale-blue: hsl(225, 100%, 98%); /* Top BG Pattern */
+    --light-grayish-blue: hsl(227, 47%, 96%); /* Card BG */
+    --dark-grayish-blue: hsl(228, 12%, 44%); /* Text */
+    --very-dark-blue: hsl(230, 17%, 14%); /* Text */
+}
+@font-face {
+    font-family: Inter;
+    src: url("/Inter-VariableFont_slnt,wght.ttf");
+}
+
+/* Body / Containers */
+body {
+    font-family: Inter, sans-serif;
+}
+.page-wrapper {
+    position: relative;
+    z-index: 99;
+    gap: 30px;
+    height: 100vh;
+}
+#top-bg, #bottom-bg {
+    position: absolute;
+}
+#top-bg {
+    height: 30%;
+    width: 100%;
+    background-color: var(--very-pale-blue);
+    z-index: 1;
+}
+#bottom-bg {
+    top: 70%;
+    height: 75%;
+    width: 100%;
+    background-color: var(--white-light);
+    z-index: 1;
+}
+header.container {
+    height: 15%;
+}
+#sm-cards-container {
+    height: 35%;
+    border: 1px solid red;
+}
+#overview-cards-container {
+    height: 55%;
+    border: 1px solid lightcoral;
+}
+footer.container {
+    height: 5%;
+    flex-direction: row;
+}
+
+header h1 {
+    line-height: 35px;
+}
+header p {
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
+/* Social Media Cards Section */
+.sm-card {
+    height: 100%;
+    background-color: var(--light-grayish-blue);
+    border-radius: 8px;
+    gap: 10%;
+}
+.sm-card .row {
+    gap: 4px;
+}
+.sm-handle {
+    color: var(--dark-grayish-blue);
+}
+.follower-displacement {
+    color: var(--lime-green);
+}
+.sm-handle, .follower-displacement {
+    font-size: 12px;
+    font-weight: 800;
+}
+.followers-count {
+    font-size: 60px;
+    line-height: 60px;
+}
+.followers-label {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+.arrow-icon {
+    height: 8px;
+    width: 8px;
+}
+
+#facebook-card {
+    border-top: 8px solid var(--facebook);
+}
+#twitter-card {
+    border-top: 8px solid var(--twitter);
+}
+#instagram-card {
+}
+
+
+
+
+
+
+/* Social Media Overview Cards Section */
+
+/* Citation */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
