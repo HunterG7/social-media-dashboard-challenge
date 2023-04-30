@@ -39,7 +39,7 @@ body {
 .page-wrapper {
     position: relative;
     z-index: 99;
-    gap: 30px;
+    gap: 80px;
     height: 100vh;
 }
 #top-bg, #bottom-bg {
@@ -63,11 +63,9 @@ header.container {
 }
 #sm-cards-container {
     height: 35%;
-    border: 1px solid red;
 }
 #overview-cards-container {
     height: 55%;
-    border: 1px solid lightcoral;
 }
 footer.container {
     height: 5%;
@@ -86,7 +84,9 @@ header p {
 .sm-card {
     height: 100%;
     background-color: var(--light-grayish-blue);
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    border: 1px solid transparent;
     gap: 10%;
 }
 .sm-card .row {
@@ -95,12 +95,15 @@ header p {
 .sm-handle {
     color: var(--dark-grayish-blue);
 }
-.follower-displacement {
+.displacement-down, .displacement-up {
+    font-weight: 800;
+    font-size: 12px;
+}
+.displacement-up {
     color: var(--lime-green);
 }
-.sm-handle, .follower-displacement {
-    font-size: 12px;
-    font-weight: 800;
+.displacement-down {
+    color: var(--bright-red);
 }
 .followers-count {
     font-size: 60px;
@@ -115,24 +118,68 @@ header p {
     height: 8px;
     width: 8px;
 }
-
-#facebook-card {
-    border-top: 8px solid var(--facebook);
+#facebook-card::before, #twitter-card::before, #instagram-card::before, #youtube-card::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    right: -1px;
+    height: 10px;
+    border-radius: 8px;
+    z-index: -1;
 }
-#twitter-card {
-    border-top: 8px solid var(--twitter);
+#facebook-card::before {
+    background: var(--facebook);
 }
-#instagram-card {
+#twitter-card::before {
+    background: var(--twitter);
 }
-
-
-
-
-
+#instagram-card::before {
+    background: linear-gradient(to right, var(--instagram-lg1), var(--instagram-lg2));
+}
+#youtube-card::before {
+    background: var(--youtube);
+}
+#youtube-card .displacement {
+    color: var(--bright-red);
+}
 
 /* Social Media Overview Cards Section */
+#overview-header {
+    color: var(--dark-grayish-blue);
+    font-size: 35px;
+}
+#overview-cards-box {
+    gap: 20px;
+}
+.overview-card {
+    min-width: 20%;
+    max-width: 25%;
+    height: 55%;
+    gap: 15px;
+    padding: 10px 10px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 8px;
+}
+.overview-card-logo {
+    height: 25px;
+    width: 25px;
+}
+.overview-category {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark-grayish-blue);
+}
+.overview-card h3 {
+    font-size: 40px;
+}
+.arrow-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 
 /* Citation */
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
