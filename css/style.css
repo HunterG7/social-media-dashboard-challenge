@@ -32,44 +32,107 @@
     src: url("/Inter-VariableFont_slnt,wght.ttf");
 }
 
-/* Body / Containers */
 body {
     font-family: Inter, sans-serif;
 }
 .page-wrapper {
     position: relative;
     z-index: 99;
-    gap: 80px;
+    gap: 55px;
     height: 100vh;
 }
 #top-bg, #bottom-bg {
     position: absolute;
 }
+.light-top-bg {
+    background-color: var(--very-pale-blue);
+}
+.dark-top-bg{
+    background-color: var(--very-dark-blue2);
+}
 #top-bg {
     height: 30%;
     width: 100%;
-    background-color: var(--very-pale-blue);
     z-index: 1;
 }
+.light-bottom-bg {
+    background-color: var(--white-light);
+}
+.dark-bottom-bg{
+    background-color: var(--very-dark-blue1);
+}
 #bottom-bg {
-    top: 70%;
+    top: 30%;
     height: 75%;
     width: 100%;
-    background-color: var(--white-light);
     z-index: 1;
 }
 header.container {
-    height: 15%;
+    height: 10vh;
+    margin-top: 15px;
 }
 #sm-cards-container {
-    height: 35%;
+    height: 45vh;
 }
 #overview-cards-container {
-    height: 55%;
+    height: 45vh;
 }
 footer.container {
-    height: 5%;
     flex-direction: row;
+}
+
+#mode-switch-wrapper.dark-mode-switch-wrapper{
+    background: linear-gradient(to right, var(--toggle-dark-lg1), var(--toggle-dark-lg2));
+}
+#mode-switch-wrapper {
+    height: 24px;
+    width: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: var(--toggle-light);
+}
+#mode-switch-wrapper:hover {
+    background: linear-gradient(to right, var(--toggle-dark-lg1), var(--toggle-dark-lg2));
+}
+#mode-switch-wrapper.dark-mode-switch-wrapper:hover {
+    background: var(--toggle-light);
+}
+.mode-switch-row {
+    position: relative;
+}
+.mode-switch-row p {
+    color: var(--toggle-light);
+    font-size: 15px;
+    font-weight: 800;
+}
+.light-mode-switch{
+    background-color: var(--white-light);
+}
+#mode-switch.dark-mode-switch{
+    background-color: var(--very-dark-blue1);
+    right: 48px;
+}
+#mode-switch {
+    border: none;
+    position: absolute;
+    border-radius: 9999px;
+    height: 18px;
+    width: 18px;
+    top: 3px;
+    right: 24px;
+}
+
+.light-primary-text {
+    color: #000;
+}
+.dark-primary-text{
+    color: var(--white-dark);
+}
+.light-secondary-text{
+    color: var(--dark-grayish-blue);
+}
+.dark-secondary-text{
+    color: var(--desaturated-blue);
 }
 
 header h1 {
@@ -77,23 +140,27 @@ header h1 {
 }
 header p {
     font-weight: 700;
-    color: var(--dark-grayish-blue);
     font-size: 15px;
 }
-/* Social Media Cards Section */
+.light-media-cards-bg{
+    background-color: var(--light-grayish-blue);
+}
+.dark-media-cards-bg{
+    background-color: var(--dark-desaturated-blue);
+}
+/* Social Media Cards */
 .sm-card {
     height: 100%;
-    background-color: var(--light-grayish-blue);
     border-radius: 0 0 8px 8px;
     position: relative;
     border: 1px solid transparent;
     gap: 10%;
+    cursor: pointer;
 }
 .sm-card .row {
     gap: 4px;
 }
 .sm-handle {
-    color: var(--dark-grayish-blue);
 }
 .displacement-down, .displacement-up {
     font-weight: 800;
@@ -110,7 +177,6 @@ header p {
     line-height: 60px;
 }
 .followers-label {
-    color: var(--dark-grayish-blue);
     letter-spacing: 4px;
     font-size: 15px;
 }
@@ -144,10 +210,21 @@ header p {
     color: var(--bright-red);
 }
 
-/* Social Media Overview Cards Section */
+.sm-card:hover, .overview-card:hover {
+    background-color: #DFE1ED;
+}
+.sm-card.dark-media-cards-bg:hover, .overview-card.dark-media-cards-bg:hover {
+    background-color: #343A54;
+}
+
 #overview-header {
-    color: var(--dark-grayish-blue);
     font-size: 35px;
+}
+.light-overview-header {
+    color: var(--dark-grayish-blue);
+}
+.dark-overview-header {
+    color: var(--white-dark);
 }
 #overview-cards-box {
     gap: 20px;
@@ -158,8 +235,8 @@ header p {
     height: 55%;
     gap: 15px;
     padding: 10px 10px;
-    background-color: var(--light-grayish-blue);
     border-radius: 8px;
+    cursor: pointer;
 }
 .overview-card-logo {
     height: 25px;
@@ -168,7 +245,6 @@ header p {
 .overview-category {
     font-size: 20px;
     font-weight: 800;
-    color: var(--dark-grayish-blue);
 }
 .overview-card h3 {
     font-size: 40px;
@@ -181,5 +257,11 @@ header p {
 
 
 /* Citation */
+.light-attribution {
+    color: #000;
+}
+.dark-attribution {
+    color: var(--white-dark);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

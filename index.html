@@ -14,8 +14,8 @@
 <body>
 
 <!-- Background Color -->
-<div id="top-bg"></div>
-<div id="bottom-bg"></div>
+<div id="top-bg" class="light-top-bg"></div>
+<div id="bottom-bg" class="light-bottom-bg"></div>
 
 <!-- All Page Content -->
 <div class="page-wrapper">
@@ -23,14 +23,16 @@
     <header class="container justify-center">
         <div class="row align-center no-padding">
             <div class="column justify-center">
-                <h1>Social Media Dashboard</h1>
-                <p>Total Followers: 23,004</p>
+                <h1 class="light-primary-text">Social Media Dashboard</h1>
+                <p class="light-secondary-text">Total Followers: 23,004</p>
             </div>
 
             <div class="column justify-center">
-                <div class="row justify-right">
-                    <p>mode</p>
-                    <input type="button">
+                <div class="row align-center justify-right mode-switch-row">
+                    <p>Dark Mode</p>
+                    <div id="mode-switch-wrapper">
+                        <input id="mode-switch" type="button">
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,15 +41,15 @@
     <!-- social media cards -->
     <section id="sm-cards-container" class="container justify-center">
         <div class="row grow no-padding">
-            <div id="facebook-card" class="column justify-center sm-card">
+            <div id="facebook-card" class="column justify-center sm-card light-media-cards-bg">
                 <div class="row justify-center align-center no-padding">
                     <img src="social-media-dashboard/images/icon-facebook.svg" alt="Facebook logo">
-                    <p class="sm-handle">@nathanf</p>
+                    <p class="sm-handle light-secondary-text">@nathanf</p>
                 </div>
                 <div class="row justify-center">
                     <div class="column align-center">
-                        <h3 class="followers-count">1987</h3>
-                        <p class="followers-label">FOLLOWERS</p>
+                        <h3 class="followers-count light-primary-text">1987</h3>
+                        <p class="followers-label light-secondary-text">FOLLOWERS</p>
                     </div>
                 </div>
                 <div class="row justify-center align-center">
@@ -56,15 +58,15 @@
                 </div>
             </div>
 
-            <div id="twitter-card" class="column justify-center sm-card">
+            <div id="twitter-card" class="column justify-center sm-card light-media-cards-bg">
                 <div class="row justify-center align-center no-padding handle-logo-row">
                     <img src="social-media-dashboard/images/icon-twitter.svg" alt="Twitter logo">
-                    <p class="sm-handle">@nathanf</p>
+                    <p class="sm-handle light-secondary-text">@nathanf</p>
                 </div>
                 <div class="row justify-center">
                     <div class="column align-center">
-                        <h3 class="followers-count">1044</h3>
-                        <p class="followers-label">FOLLOWERS</p>
+                        <h3 class="followers-count light-primary-text">1044</h3>
+                        <p class="followers-label light-secondary-text">FOLLOWERS</p>
                     </div>
                 </div>
                 <div class="row justify-center align-center">
@@ -73,15 +75,15 @@
                 </div>
             </div>
 
-            <div id="instagram-card" class="column justify-center sm-card">
+            <div id="instagram-card" class="column justify-center sm-card light-media-cards-bg">
                 <div class="row justify-center align-center no-padding handle-logo-row">
                     <img src="social-media-dashboard/images/icon-instagram.svg" alt="Instagram logo">
-                    <p class="sm-handle">@nathanf</p>
+                    <p class="sm-handle light-secondary-text">@nathanf</p>
                 </div>
                 <div class="row justify-center">
                     <div class="column align-center">
-                        <h3 class="followers-count">11k</h3>
-                        <p class="followers-label">FOLLOWERS</p>
+                        <h3 class="followers-count light-primary-text">11k</h3>
+                        <p class="followers-label light-secondary-text">FOLLOWERS</p>
                     </div>
                 </div>
                 <div class="row justify-center align-center">
@@ -90,15 +92,15 @@
                 </div>
             </div>
 
-            <div id="youtube-card" class="column justify-center sm-card">
+            <div id="youtube-card" class="column justify-center sm-card light-media-cards-bg">
                 <div class="row justify-center align-center no-padding handle-logo-row">
                     <img src="social-media-dashboard/images/icon-youtube.svg" alt="YouTube logo">
-                    <p class="sm-handle">@nathanf</p>
+                    <p class="sm-handle light-secondary-text">@nathanf</p>
                 </div>
                 <div class="row justify-center">
                     <div class="column align-center">
-                        <h3 class="followers-count">8239</h3>
-                        <p class="followers-label">SUBSCRIBERS</p>
+                        <h3 class="followers-count light-primary-text">8239</h3>
+                        <p class="followers-label light-secondary-text">SUBSCRIBERS</p>
                     </div>
                 </div>
                 <div class="row justify-center align-center">
@@ -112,17 +114,17 @@
     <!-- overview cards -->
     <section id="overview-cards-container" class="container">
         <div class="row no-padding">
-            <h2 id="overview-header">Overview - Today</h2>
+            <h2 id="overview-header" class="light-overview-header">Overview - Today</h2>
         </div>
 
         <div id="overview-cards-box" class="row justify-center grow no-padding wrap">
-            <div class="column  justify-center overview-card">
+            <div class="column  justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Page Views</p>
+                    <p class="overview-category light-secondary-text">Page Views</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-facebook.svg" alt="Facebook Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>87</h3>
+                    <h3 class="light-primary-text">87</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
                         <p class="displacement-up">3%</p>
@@ -130,13 +132,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Likes</p>
+                    <p class="overview-category light-secondary-text">Likes</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-facebook.svg" alt="Facebook Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>52</h3>
+                    <h3 class="light-primary-text">52</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-down.svg" alt="Down Arrow">
                         <p class="displacement-down">2%</p>
@@ -144,13 +146,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Profile Views</p>
+                    <p class="overview-category light-secondary-text">Profile Views</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-instagram.svg" alt="Instagram Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>5462</h3>
+                    <h3 class="light-primary-text">5462</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
                         <p class="displacement-up">2257%</p>
@@ -158,13 +160,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Likes</p>
+                    <p class="overview-category light-secondary-text">Likes</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-instagram.svg" alt="Instagram Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>52k</h3>
+                    <h3 class="light-primary-text">52k</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
                         <p class="displacement-up">1375%</p>
@@ -172,13 +174,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Retweets</p>
+                    <p class="overview-category light-secondary-text">Retweets</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-twitter.svg" alt="Twitter Icon">
              </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>117</h3>
+                    <h3 class="light-primary-text">117</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
                         <p class="displacement-up">303%</p>
@@ -186,13 +188,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Likes</p>
+                    <p class="overview-category light-secondary-text">Likes</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-twitter.svg" alt="Twitter Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>507</h3>
+                    <h3 class="light-primary-text">507</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-up.svg" alt="Up Arrow">
                         <p class="displacement-up">553%</p>
@@ -200,13 +202,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Likes</p>
+                    <p class="overview-category light-secondary-text">Likes</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-youtube.svg" alt="YouTube Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>107</h3>
+                    <h3 class="light-primary-text">107</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-down.svg" alt="Down Arrow">
                         <p class="displacement-down">19%</p>
@@ -214,13 +216,13 @@
                 </div>
             </div>
 
-            <div class="column justify-center overview-card">
+            <div class="column justify-center overview-card light-media-cards-bg">
                 <div class="row justify-space-between align-center overview-card-row">
-                    <p class="overview-category">Total Views</p>
+                    <p class="overview-category light-secondary-text light-secondary-text">Total Views</p>
                     <img class="overview-card-logo" src="social-media-dashboard/images/icon-youtube.svg" alt="YouTube Icon">
                 </div>
                 <div class="row justify-space-between align-center overview-card-row">
-                    <h3>1407</h3>
+                    <h3 class="light-primary-text">1407</h3>
                     <div class="arrow-row">
                         <img class="arrow-icon" src="social-media-dashboard/images/icon-down.svg" alt="Down Arrow">
                         <p class="displacement-down">12%</p>
@@ -231,54 +233,10 @@
     </section>
 
     <!-- Citation / Footer -->
-    <footer class="attribution container justify-center">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
-        Coded by <a href="https://www.frontendmentor.io/profile/HunterG7" target="_blank">Hunter</a>.
+    <footer class="attribution container justify-center light-attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/HunterG7" target="_blank">Hunter</a>.</p>
     </footer>
-</div>
-
-
-
-Dark Mode
-
-
-Overview - Today
-
-Page Views
-87
-3%
-
-Likes
-52
-2%
-
-Likes
-5462
-2257%
-
-Profile Views
-52k
-1375%
-
-Retweets
-117
-303%
-
-Likes
-507
-553%
-
-Likes
-107
-19%
-
-Total Views
-1407
-12%
-
-<div class="container attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/HunterG7" target="_blank">Hunter</a>.
 </div>
 
 <script src="js/main.js"></script>
