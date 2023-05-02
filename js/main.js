@@ -7,7 +7,8 @@ const socialMediaCards = document.querySelectorAll('.sm-card, .overview-card');
 const primaryText = document.querySelectorAll('.followers-count, .overview-card-row h3, header h1');
 const secondaryText = document.querySelectorAll('.sm-handle, .overview-category, header p');
 const overviewHeader = document.querySelector('#overview-header');
-const footer = document.querySelector('.attribution');
+const footerText = document.querySelector('footer p');
+const footerLink = document.querySelector('footer a')
 
 modeSwitch.addEventListener('click', (e)=>{
 	modeSwitchCircle.classList.toggle('dark-mode-switch');
@@ -25,5 +26,6 @@ modeSwitch.addEventListener('click', (e)=>{
 		text.classList.toggle('dark-secondary-text');
 	})
 
-	footer.classList.toggle('dark-attribution');
+	footerText.classList.toggle('dark-attribution');
+	footerLink.classList.toggle('dark-attribution-a');
 });

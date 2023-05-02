@@ -79,6 +79,13 @@ header.container {
 }
 footer.container {
     flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.dark-media-cards-bg, .dark-attribution, .dark-bottom-bg, .dark-mode-switch, .dark-mode-switch-wrapper, .dark-overview-header, .dark-primary-text,
+.dark-secondary-text, .dark-top-bg, .light-media-cards-bg, .light-attribution, .light-bottom-bg, .light-mode-switch, #mode-switch-wrapper, .light-overview-header, .light-primary-text,
+.light-secondary-text, .light-top-bg {
+    transition: all .3s ease;
 }
 
 #mode-switch-wrapper.dark-mode-switch-wrapper{
@@ -91,12 +98,6 @@ footer.container {
     cursor: pointer;
     background: var(--toggle-light);
 }
-#mode-switch-wrapper:hover {
-    background: linear-gradient(to right, var(--toggle-dark-lg1), var(--toggle-dark-lg2));
-}
-#mode-switch-wrapper.dark-mode-switch-wrapper:hover {
-    background: var(--toggle-light);
-}
 .mode-switch-row {
     position: relative;
 }
@@ -107,6 +108,7 @@ footer.container {
 }
 .light-mode-switch{
     background-color: var(--white-light);
+    right: 24px;
 }
 #mode-switch.dark-mode-switch{
     background-color: var(--very-dark-blue1);
@@ -119,7 +121,6 @@ footer.container {
     height: 18px;
     width: 18px;
     top: 3px;
-    right: 24px;
 }
 
 .light-primary-text {
@@ -263,5 +264,15 @@ header p {
 .dark-attribution {
     color: var(--white-dark);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.light-attribution-a {
+    color: var(--dark-grayish-blue);
+}
+.dark-attribution-a {
+    color: var(--desaturated-blue);
+}
+footer a{
+    font-weight: 800;
+}
+footer p {
+    font-size: 12px;
+}
